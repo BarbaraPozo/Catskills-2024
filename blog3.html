@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Estilos del contenido principal */
+main {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffe0;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #0000ff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 4px;
+}
+
+/* Estilo de la tabla de horario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #ffcc00;
+    color: #ffffff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+</style>
+        </head>
+        <body>
+            
+
+
+    <style> /* Estilos generales */
+        body {font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #000000;
+            line-height: 1.6;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background: linear-gradient(135deg, #ff0000, #71c100, #0000ff); /* Rojo y Verde */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgb(0, 0, 0);
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #ffffe0; /* Color amarillo claro */
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgb(0, 0, 0);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #0000ff; /* Azul */
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: #ff0000; /* Rojo */
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            border-radius: 4px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #000000;
+            text-align: justify;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+        }
+
+        section p:hover {
+            color: #008b0c; /* Verde */
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background: linear-gradient(135deg, #ff0000, #71c100, #0000ff); /* Rojo y Verde */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            margin-top: 40px;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+
+        /* Efectos decorativos adicionales */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent);
+            z-index: -1;
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.7), transparent);
+            z-index: -1;
+            border-radius: 12px;
+            pointer-events: none;
+        }
+    </style>
+
+
+    <header>
+        <h1>Blog 3 - Entrenament de Catskills 44</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introducció</a></li>
+                <li><a href="blog.html">Blog de Publicacions</a></li>
+                <li><a href="servei.html">Servei de Personal Shopper</a></li>
+                <li><a href="taller.html">Taller d'aparadorisme</a></li>
+                <li><a href="fotos.html">Fotografies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog">
+            <h2>El gran dia ja ha succeït: Entrenament de Catskills 44</h2>
+
+            <p>EL primer entrenament de Catskills 2024 de la familia d'aparadorisme, gràcies a la bona organització de la Cristina Piernas, i l'ajuda dels alumnes de la seva tutoria, va sorgir de la manera més ideal podríem haver pensat, tot i que com en tots els casos, evidentment, no tot va estar perfecte. </p>
+
+            <section>
+                <h3>Organització horària de l'entrenament</h3>
+                <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Activitat</th>
+                        </tr>
+                        <tr>
+                            <td>09:00 - 09:30</td>
+                            <td>Acollida i inscripcions</td>
+                        </tr>
+                        <tr>
+                            <td>09:30 - 10:00</td>
+                            <td>Discurs introducctori</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 10:30</td>
+                            <td>Cereació de l'esbós</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 - 11:00</td>
+                            <td>Elaboració i muntatge de la taula de presentació pt1.</td>
+                            </tr><tr>
+                            <td>11:00 - 11:30</td>
+                            <td>Esmorzar</td>
+                        </tr>
+                        <tr>
+                            <td>11:30 - 12:30</td>
+                            <td>Elaboració i muntatge de la taula de presentació pt2.</td>
+                            </tr><tr>
+                            <td>12:30 - 13:00</td>
+                            <td>Preparació guió de presentació</td>
+                            </tr><tr>
+                            <td>13:00 - 13:30</td>
+                            <td>Argumentari de la taula de presentació a la resta de participants i tutors</td>
+                        </tr>
+                        <tr>
+                            <td>13:30 - 15:00</td>
+                            <td>Dinar</td>
+                          </tr><tr>
+                            <td>15:00 - 18:00</td>
+                            <td>Taller teoríc i pràctic d'aparadorisme d'en ROberto</td>
+                        </tr>
+                        <tr>
+                            <td>18:00</td>
+                            <td>Comïat</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+<br>
+            <section>
+                <h3>Incidents a l'arribada: Les tempestes de Dana</h3>
+                <hr>
+                <p>El concurs va començar amb una situació inesperada quan dues participants de Tarragona es van veure afectades per prevenir possibles accidents per les fortes tempestes de Dana. Aquestes participants no van poder arribar a l'entrenament, però igualment seràn convidades al concurs oficial.</p>
+            </section>
+
+            <section>
+                <h3>Xerrada d'en Roberto sobre tècniques d'aparadorisme</h3>
+                <hr>
+                <p>En Roberto, expert en aparadorisme, va oferir una xerrada fascinant on va explicar les últimes tècniques utilitzades en la creació d'aparadors. Va parlar sobre l'ús de colors, textures i l'impacte de la il·luminació per crear una experiència visual que atraigui els clients. Els assistents vam quedar molt impressionats amb la seva capacitat d'expresió passionalment.</p>
+            </section>
+
+            <section>
+                <h3>Taller pràctic per aplicar les tècniques d'aparadorisme</h3>
+                <hr>
+                <p>Després de la xerrada, els participants vam tenir l'oportunitat de posar en pràctica tot el que van aprendre durant la petita xerrada. Vam treballar en dos grans grups, dividits entre tutores i participants, per crear dos aparadors utilitzant tècniques innovadores, amb el suport d'en Roberto en cas de que fos necessàri.</p></section>
+            
+            <section>
+                <h3>Classe pràctica d'anglès</h3>
+                <hr>
+                <p>Dies despres de l'entrenament, a les participants se'ns va oferir participar a una videotrucada grupal amb una professora d'anglès molt dinàmica, on ens va explicar diversses tècniques, vocabulari, temps verbals necessàris... per tal de fer defenses d'aparadors i altres aspectes artisitics, aplicant la llengüa anglesa.</p></section>
+
+            <script>nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    left: 0;
+}</script>
+        
+    
+</section></main></body>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Estilos del contenido principal */
+main {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffe0;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #0000ff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 4px;
+}
+
+/* Estilo de la tabla de horario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #ffcc00;
+    color: #ffffff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+</style>
+        </head>
+        <body>
+            
+
+
+            <style>
+ /* Estilos generales */
+body {font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff); /* Rojo y Verde */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Estilos del contenido principal */
+main {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffe0; /* Color amarillo claro */
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #0000ff; /* Azul */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff0000; /* Rojo */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 4px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+section p:hover {
+    color: #008b0c; /* Verde */
+}
+
+/* Estilo del pie de página */
+footer {
+     background: linear-gradient(135deg, #ff0000, #71c100, #0000ff); /* Rojo y Verde */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Efectos decorativos adicionales */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent);
+    z-index: -1;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), transparent);
+    z-index: -1;
+    border-radius: 12px;
+    pointer-events: none;
+}</style>
+        
+        
+            
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pàgina principal del concurs Catskills">
+    <title>Concurs Catskills</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <header>
+        <h1>Concurs Catskills</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introducció</a></li>
+                <li><a href="blog.html">Blog de Publicacions</a></li>
+                <li><a href="servei.html">Servei de Personal Shopper</a></li>
+                <li><a href="taller.html">Taller d'aparadorisme
+                </a></li><li><a href="fotos.html">Fotografies</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+
+
+
+    <meta charset="UTF-8">
+    <title>Pàgina en Català i Anglès</title>
+    <script>
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll("[data-text]");
+            elements.forEach(el => el.textContent = translations[lang][el.getAttribute("data-text")]);
+        }
+
+        const translations = {
+            "ca": {
+                "header": "Benvingut al nostre lloc web!",
+                "content": "Aquesta és la versió catalana de la nostra pàgina."
+            },
+            "en": {
+                "header": "Welcome to our website!",
+                "content": "This is the English version of our page."
+            }
+        };
+    </script>
+
+
+
+
+
+    <main>
+        <section id="introduccio">
+            <h2>Introducció</h2>
+            <p>Benvinguts al concurs Catskills, una competició catalana on els talentosos alumnes de formació professional d'alguns instituts de Catalunya es reuneixen per mostrar les seves habilitats en diferents categories.<br><br>
+            Especificament, aquest blog tractarà sobre l'entrenament previ al concurs que se celebrarà el proper 13 de novembre de 2024, a l'Institut de Vic (centre organitzador).
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>© El blog de Catskills 44 - 2024. Barbara Pozo</b></p>
+    </footer>
+
+
+
+            <script>nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    left: 0;
+}
+
+
+
+</script>
+        
+    
+
+            <script>nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    left: 0;
+}</script>
+        
+    
+</body>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Estilos del contenido principal */
+main {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffe0;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #0000ff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 4px;
+}
+
+/* Estilo de la tabla de horario */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #ffcc00;
+    color: #ffffff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+</style>
+        </head>
+        <body>
+            
+
+
+    <style>
+        /* Estils principals */
+        header {
+            background: linear-gradient(135deg, #ff0000, #71c100, #0000ff);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        main {
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 20px rgba(255, 0, 0, 0.1);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #71c100;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a9e00;
+        }
+
+        .options {
+            margin: 10px 0;
+        }
+    </style>
+
+
+
+
+            <style>
+ /* Estilos generales */
+body {font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #ff0000, #71c100, #0000ff); /* Rojo y Verde */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Estilos del contenido principal */
+main {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffe0; /* Color amarillo claro */
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #0000ff; /* Azul */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff0000; /* Rojo */
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 4px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+section p:hover {
+    color: #008b0c; /* Verde */
+}
+
+/* Estilo del pie de página */
+footer {
+     background: linear-gradient(135deg, #ff0000, #71c100, #0000ff); /* Rojo y Verde */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    margin-top: 40px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Efectos decorativos adicionales */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent);
+    z-index: -1;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), transparent);
+    z-index: -1;
+    border-radius: 12px;
+    pointer-events: none;
+}</style>
+        
+        
+            
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pàgina principal del concurs Catskills">
+    <title>Concurs Catskills</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <header>
+        <h1>Personal shopper</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Introducció</a></li>
+                <li><a href="blog.html">Blog de Publicacions</a></li>
+                <li><a href="servei.html">Servei de Personal Shopper</a></li>
+                <li><a href="taller.html">Taller d'aparadorisme
+                </a></li><li><a href="fotos.html">Fotografies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Personal Shopper</h2>
+            <form action="submit_form.php" method="POST">
+        <section>
+            <p>Per tal de gaudir d'una experiencia personalitzada sobre recomenació del calçat més adients als teus gustos, tallatge... <strong>respon el següent formulari</strong>, per informar al nostre <strong>personal especialitzat</strong>, per ajudar-te a escollir el millor per a tú.
+        
+        </p></section>
+                <!-- Tallatge -->
+                <label for="size">Tallatge</label>
+                <select id="size" name="size" required="">
+                    <option value="Infantil">Infantil</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="40">42</option>
+                    <option value="41">43</option>
+                    <option value="40">44</option>
+                    <option value="41">45</option>
+                    <option value="40">46</option>
+                    <option value="41">47</option>
+                    <option value="Altres">Altres</option>
+                </select>
+
+                <!-- Colors preferits -->
+                <label for="colors">Colors preferits (incloent les diferents tonalitats)</label>
+                <select id="colors" name="colors" required="">
+                    <option value="negre">Negre</option>
+                    <option value="negre">Blanc</option>
+                    <option value="blau">Blau</option>
+                    <option value="vermell">Vermell</option>
+                    <option value="negre">Groc</option>
+                    <option value="blau">Verd</option>
+                    <option value="vermell">Rosa</option>
+                    <option value="vermell">Taronja</option>
+                    <option value="negre">Morat</option>
+                    <option value="blau">Marró</option>
+                    <option value="vermell">Gris</option>
+                    <option value="altres">Altres</option>
+                    <option value="No">No és important per a mí</option>
+                </select>
+                
+
+                <!-- Tipologia/Estil -->
+                <label for="style">Tipologia/Estil</label>
+                <select id="style" name="style" required="">
+                    <option value="esportiu">Esportiu</option>
+                    <option value="casual">Casual</option>
+                    <option value="elegant">Elegant</option>
+                    <option value="altres">Altres</option>
+                    <option value="No">No és important per a mí</option>
+                </select>
+                
+
+                <!-- Materials preferits -->
+                <label for="materials">Materials preferits</label>
+                <select id="materials" name="materials" required="">
+                    <option value="pell">Pell</option>
+                    <option value="tela">Tela</option>
+                    <option value="sintetics">Sintètics</option>
+                    <option value="altres">Altres</option>
+                    <option value="No">No és important per a mí</option>
+                </select>
+
+                <!-- Materials preferits -->
+                <label for="materials">Presupost</label>
+                <select id="materials" name="materials" required="">
+                    <option value="pell">De 20€ - 40€</option>
+                    <option value="tela">De 40€ - 60€</option>
+                    <option value="pell">De 60€ - 80€</option>
+                    <option value="tela">De 80€ - 100€</option>
+                    <option value="altres">Altres</option>
+                    <option value="No">No és important per a mí</option>
+                </select>
+                
+
+                <!-- Comentaris -->
+                <label for="comments">Comentaris o preferències especials</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Escriu aquí qualsevol altra informació rellevant..."></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Concurs Catskills. Tots els drets reservats.</p>
+    </footer>
+
+
+
+            <script>nav ul li a {
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    left: 0;
+}</script>
+        
+    
+</body>
